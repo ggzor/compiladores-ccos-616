@@ -80,10 +80,12 @@ public class Parser {
             break;
           }
 
+          if (!nonTerminals.contains(state))
+            Common.error("Unexpected %s, expecting '%s'", formatToken(token), state);
+
           var rule = delta.get(state).get(token);
           if (rule == null)
-            Common.error("Unexpected %s", //
-                token == null ? "EOF" : String.format("token '%s'", token));
+            Common.error("Unexpected %s", formatToken(token));
 
           // Epsilon
           if (rule.length == 1 && rule[0].isEmpty()) {
@@ -103,6 +105,10 @@ public class Parser {
 
     Common.debug("Accepted");
     tree.forEach(System.out::println);
+  }
+
+  public static String formatToken(String token) {
+    return token == null ? "EOF" : String.format("token '%s'", token);
   }
 
   public static String[] partition(List<String> parts, String value) {
