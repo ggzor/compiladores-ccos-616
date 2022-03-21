@@ -1,0 +1,8 @@
+ _     a-z    A-Z    0-9   +  *  (  )  \s
+>q0    ident  ident  _     +  *  (  )  space
+*ident ident  ident  ident _  _  _  _  _
+ space _      _      _     _  _  _  _  _
+*+     _      _      _     _  _  _  _  _
+**     _      _      _     _  _  _  _  _
+*(     _      _      _     _  _  _  _  _
+*)     _      _      _     _  _  _  _  _

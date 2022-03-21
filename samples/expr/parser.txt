@@ -1,0 +1,6 @@
+_   +     *     (    )  ident  $
+E   _     _     TE'  _  TE'    _
+E'  +TE'  _     _    \  _      \
+T   _     _     FT'  _  FT'    _
+T'  \     *FT'  _    \  _      \
+F   _     _     (E)  _  ident  _
