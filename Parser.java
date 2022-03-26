@@ -90,6 +90,8 @@ public class Parser {
           // Epsilon
           if (rule.length == 1 && rule[0].isEmpty()) {
             dumpState.run();
+            if (!Common.usesDebug())
+              tree.remove(tree.size() - 1);
             continue;
           } else {
             for (int i = rule.length - 1; i >= 0; i--) {

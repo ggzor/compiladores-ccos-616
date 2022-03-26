@@ -33,7 +33,7 @@ public class Lexer {
         String nextState = delta.get(state).get(c);
 
         if (nextState == null)
-          Common.error("Unknown char: '%s'", Common.escape(String.valueOf((char) c)));
+          Common.error("Unknown char: %s", Common.escape(String.valueOf((char) c)));
         if (nextState.equals("_")) {
           if (state.equals(initial) && lexeme.length() == 0)
             Common.error("No initial transition for: '%s'", Common.escape(String.valueOf((char) c)));
