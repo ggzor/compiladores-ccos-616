@@ -1,0 +1,50 @@
+digraph finite_state_machine {
+	rankdir=LR;
+	size="10,10"
+	node [shape = doublecircle];
+	"(" ")" "+" "=" ";" "and" "bool" "int" "num" "id"
+	"id_a" "id_an" "id_b" "id_bo" "id_boo" "id_i" "id_in";
+	node [shape = circle];
+
+	null [shape = point]
+	null -> "q0"
+
+	q0 -> "(" [label = "("]
+	q0 -> ")" [label = ")"]
+	q0 -> "+" [label = "+"]
+	q0 -> "=" [label = "="]
+	q0 -> ";" [label = ";"]
+
+	q0 -> id_a [label = "a"]
+	id_a -> id_an [label = "n"]
+	id_an -> and [label = "d"]
+
+	q0 -> id_b [label = "b"]
+	id_b -> id_bo [label = "o"]
+	id_bo -> id_boo [label = "o"]
+	id_boo -> bool [label = "l"]
+
+	q0 -> id_i [label = "i"]
+	id_i -> id_in [label = "n"]
+	id_in -> int [label = "t"]
+
+	q0 -> num [label = "0-9"]
+	num -> num [label = "0-9"]
+
+	q0 -> id [label = "c-h,j-z,A-Z"]
+	id -> id [label = "a-z,A-Z,0-9"]
+
+	and -> id [label = "a-z,A-Z,0-9"]
+	bool -> id [label = "a-z,A-Z,0-9"]
+	int -> id [label = "a-z,A-Z,0-9"]
+
+	id_a -> id [label = "a-m,o-z,A-Z,0-9"]
+	id_an -> id [label = "a-c,e-z,A-Z,0-9"]
+
+	id_b -> id [label = "a-n,p-z,A-Z,0-9"]
+	id_bo -> id [label = "a-n,p-z,A-Z,0-9"]
+	id_boo -> id [label = "a-k,m-z,A-Z,0-9"]
+
+	id_i -> id [label = "a-m,o-z,A-Z,0-9"]
+	id_in -> id [label = "a-s,u-z,A-Z,0-9"]
+}
