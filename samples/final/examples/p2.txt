@@ -1,0 +1,14 @@
+int a;
+int b;
+int c;
+bool b;
+bool c;
+bool d;
+
+a = 3;
+b = 5;
+c = a + a + (b + (b));
+
+b = 1;
+c = 0;
+d = b and c

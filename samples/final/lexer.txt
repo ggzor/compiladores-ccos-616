@@ -1,0 +1,24 @@
+ _      ( ) + = ; 0-9 A-Z a    b    c  d   e-h i    j-k l    m  n     o      p-s t   u-z \s
+>q0     ( ) + = ; num id  id_a id_b id id  id  id_i id  id   id id    id     id  id  id  space
+*(      _ _ _ _ _ _   _   _    _    _  _   _   _    _   _    _  _     _      _   _   _   _
+*)      _ _ _ _ _ _   _   _    _    _  _   _   _    _   _    _  _     _      _   _   _   _
+*+      _ _ _ _ _ _   _   _    _    _  _   _   _    _   _    _  _     _      _   _   _   _
+*=      _ _ _ _ _ _   _   _    _    _  _   _   _    _   _    _  _     _      _   _   _   _
+*;      _ _ _ _ _ _   _   _    _    _  _   _   _    _   _    _  _     _      _   _   _   _
+*num    _ _ _ _ _ num _   _    _    _  _   _   _    _   _    _  _     _      _   _   _   _
+*id     _ _ _ _ _ id  id  id   id   id id  id  id   id  id   id id    id     id  id  id  _
+
+*id_a   _ _ _ _ _ id  id  id   id   id id  id  id   id  id   id id_an id     id  id  id  _
+*id_an  _ _ _ _ _ id  id  id   id   id and id  id   id  id   id id    id     id  id  id  _
+*and    _ _ _ _ _ id  id  id   id   id id  id  id   id  id   id id    id     id  id  id  _
+
+*id_b   _ _ _ _ _ id  id  id   id   id id  id  id   id  id   id id    id_bo  id  id  id  _
+*id_bo  _ _ _ _ _ id  id  id   id   id id  id  id   id  id   id id    id_boo id  id  id  _
+*id_boo _ _ _ _ _ id  id  id   id   id id  id  id   id  bool id id    id     id  id  id  _
+*bool   _ _ _ _ _ id  id  id   id   id id  id  id   id  id   id id    id     id  id  id  _
+
+*id_i   _ _ _ _ _ id  id  id   id   id id  id  id   id  id   id id_in id     id  id  id  _
+*id_in  _ _ _ _ _ id  id  id   id   id id  id  id   id  id   id id    id     id  int id  _
+*int    _ _ _ _ _ id  id  id   id   id id  id  id   id  id   id id    id     id  id  id  _
+ space  _ _ _ _ _ _   _   _    _    _  _   _   _    _   _    _  _     _      _   _   _   space
+

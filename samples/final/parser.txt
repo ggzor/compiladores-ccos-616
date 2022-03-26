@@ -1,0 +1,9 @@
+_  id   bool   int   =  and    +    num  (    )  ;    $
+S  LS'  LS'    LS'   _  _      _    _    _    _  _    _
+S' _    _      _     _  _      _    _    _    _  ;LS' \
+L  id=E boolid intid _  _      _    _    _    _  _    _
+E  TE'  _      _     _  _      _    TE'  TE'  _  _    _
+E' _    _      _     _  _      +TE' _    _    \  \    \
+T  FT'  _      _     _  _      _    FT'  FT'  _  _    _
+T' _    _      _     _  andFT' \    _    _    \  \    \
+F  id   _      _     _  _      _    num  (E)  _  _    _
