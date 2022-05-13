@@ -1,0 +1,9 @@
+Symbols:
+a: int
+t0: int
+t1: int
+
+Code:
+t0 = 1
+t1 = 1 + t0
+a = t1

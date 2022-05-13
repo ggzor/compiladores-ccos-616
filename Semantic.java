@@ -155,7 +155,7 @@ public class Semantic {
       // Search free name
       do {
         finalName = String.format("t%d", placeCounter++);
-      } while (tempSymtab.containsKey(finalName));
+      } while (tempSymtab.containsKey(finalName) || userSymtab.containsKey(finalName));
 
       // Add to symtab
       tempSymtab.put(finalName, type);
