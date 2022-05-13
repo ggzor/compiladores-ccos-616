@@ -1,0 +1,4 @@
+int a;
+bool b;
+b = 0;
+a = b and 3
