@@ -1,0 +1,12 @@
+int a;
+int b;
+
+bool x;
+bool y;
+
+x = 1;
+y = 0;
+
+b = 4;
+a = 1 + b + x and y
+

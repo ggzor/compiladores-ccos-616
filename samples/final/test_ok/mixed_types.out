@@ -1,0 +1,17 @@
+Symbols:
+a: int
+b: int
+x: bool
+y: bool
+t0: int
+t1: int
+t2: bool
+
+Code:
+x = 1
+y = 0
+b = 4
+t1 = 1 + b
+t2 = x and y
+t0 = t1 + t2
+a = t0
